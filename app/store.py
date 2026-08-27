@@ -50,4 +50,7 @@ def delete_order(order_id: int) -> bool:
 
 
 def reset() -> None:
+    """Forget every order and start ids from 1 again (tests)."""
+    global _ids
     _orders.clear()
+    _ids = count(start=1)

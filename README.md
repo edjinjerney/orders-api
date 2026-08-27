@@ -15,6 +15,13 @@ Install dependencies (a virtualenv is recommended):
 pip install -r requirements.txt
 ```
 
+Run the tests:
+
+```bash
+pip install -e '.[dev]'
+python -m pytest -q
+```
+
 Start the development server:
 
 ```bash

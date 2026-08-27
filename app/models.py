@@ -5,6 +5,8 @@ from enum import Enum
 
 from pydantic import BaseModel, ConfigDict, EmailStr, Field, computed_field
 
+from app.pricing import order_total
+
 
 class OrderStatus(str, Enum):
     PENDING = "pending"
@@ -43,7 +45,4 @@ class OrderRead(OrderBase):
     @computed_field
     @property
     def total(self) -> float:
-        return round(
-            sum(item.quantity * item.unit_price for item in self.items),
-            ndigits=2,
-        )
+        return order_total(self.items)

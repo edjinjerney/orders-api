@@ -1,0 +1,8 @@
+# Cujo policy for this repo. Read from the target branch, never from a PR.
+install: pip install -e '.[dev]'
+test: python -m pytest -q
+boot: uvicorn app.main:app --host 127.0.0.1 --port 8000
+smoke:
+  - GET /health
+  - GET /orders
+allow_hosts: []
