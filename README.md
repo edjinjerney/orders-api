@@ -67,3 +67,4 @@ curl http://127.0.0.1:8000/orders/1
 # local e2e test
 # retrigger
 # free model
+# auto free
