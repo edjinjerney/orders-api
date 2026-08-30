@@ -66,3 +66,4 @@ curl http://127.0.0.1:8000/orders/1
   by an external security tool.
 # e2e transparency test
 # glm-flash retrigger
+# fresh db retrigger
