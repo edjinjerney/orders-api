@@ -64,3 +64,6 @@ curl http://127.0.0.1:8000/orders/1
 - Storage is in-memory. All orders are lost when the process restarts.
 - This service intentionally has no authentication. It exists to be protected
   by an external security tool.
+
+## E2E Docs-Only Test
+This is a docs-only change for E2E testing.
